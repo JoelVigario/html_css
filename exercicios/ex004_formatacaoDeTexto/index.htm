@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de texto</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            background: #fefefe;
+            font-family: 'Lucida sans', sans-serif;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        p {
+            text-align: justify;
+        }
+        table {
+            border: solid 1px #13131c;
+            vertical-align: middle;
+            padding-block-start: 0px;
+            border-collapse: collapse;
+        }
+        .es {
+            background-color: #13131c;
+            color: white;
+            
+        }
+        .code {
+            font-family: 'JetBrains Mono';
+            background-color: #13131c;
+            color: rgb(12, 186, 56);
+            border-radius: 10px;
+            width: 450px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Formatação de texto</h1>
+    <hr>
+    <p>Faça sempre uso da semantica</p>
+    <h2>Tags morrem, você sabia?</h2>
+    <p>Elementos obsoletos na HTML5: <a href="https://dev.w3.org/html5/pf-summary/obsolete.html" target="_blank" rel="noopener noreferrer">W3C</a></p>
+   
+    <h2>Testando as tags de Formatação</h2>
+    <p>Lorem ipsum <strong>dolor</strong> sit amet consectetur, <em>adipisicing</em> elit. Corporis iure officiis ea. Facilis, <mark>provident</mark> alias obcaecati quaerat laboriosam ullam aliquid consectetur sit quia soluta. Optio<sup>trem</sup> aspernatur incidunt<sub>em</sub> adipisci <em><mark>dignissimos</mark></em> laboriosam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur <mark>adipisicing elit</mark>. Nisi sit quis possimus deserunt laudantium amet. Autem quae ex laboriosam dignissimos id sed voluptatem vitae perferendis, in eaque harum vero nobis.</p>
+    <p>U<sub>n</sub> = x<sup>2</sup> + x - 9</p>
+    
+    <h3>Continuação</h3>
+    <p>Lorem ipsum dolor sit amet <del>consectetur</del> adipisicing elit. Asperiores accusamus consequatur consequuntur officiis exercitationem <ins>obcaecati</ins> consectetur eligendi aliquam rerum suscipit! Consectetur voluptatum facere qui? Corrupti tenetur reiciendis nam quibusdam cupiditate.</p>
+    
+    <h4>Citações</h4>
+    <p>Lorem ipsum, <q>dolor sit amet consectetur adipisicing elit</q>. Commodi corrupti fugit itaque at ullam aperiam, <q>delectus quas perferendis, optio rerum, porro eligendi</q>. Possimus magnam, facere libero cumque officiis eligendi cum.</p>
+    <blockquote cite="url">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia praesentium, laboriosam sunt deleniti dolore vero, laborum, facilis accusantium eum nihil voluptatibus? Possimus maiores perspiciatis tempora maxime nostrum laudantium iste id?</blockquote>
+
+    <h4>Testo invertido</h4>
+    <p><bdo dir="rtl">Este texto está invertido no formato RIGHT-TO-LEFT</bdo></p>
+    
+    <h3>Exemplo de código em python</h3>
+    <pre class="code"><code>
+        num = int(input('Digite o seu nome: '))
+        if num % 2 == 0:
+            print('O número {} é par'.format(num))
+        else:
+            print('O número {} é Impar'.format(num))
+        print('FIM DO PROGRAMA')
+    </code></pre>
+    <h2>Tabela com as tags usadas</h2>
+    <table>
+        <tr><th class="es">Tag</th><th>exemplo</th></tr>
+        <tr><td class="es">&lt;strong&gt;</td><td><strong>texto</strong></td></tr>
+        <tr><td class="es">&lt;em&gt;</td><td><em>texto</em></td></tr>
+        <tr><td class="es">&lt;mark&gt;</td><td><mark>texto</mark></td></tr>
+        <tr><td class="es">&lt;ins&gt;</td><td><ins>texto</ins></td></tr>
+        <tr><td class="es">&lt;del&gt;</td><td><del>texto</del></td></tr>
+        <tr><td class="es">&lt;sup&gt;</td><td><sup>texto</sup></td></tr>
+        <tr><td class="es">&lt;sub&gt;</td><td><sub>texto</sub></td></tr>
+        <tr><td class="es">&lt;q&gt;</td><td><q>texto</q></td></tr>
+        <tr><td class="es">&lt;abbr&gt;</td><td><abbr title="Abreviação">texto</abbr></td></tr>
+        <tr><td class="es">&lt;bdo&gt;</td><td><bdo dir="rtl">texto</bdo></td></tr>
+    </table>
+    <hr>
+    <p>&copy; Joel Vigário | Rigorosidade &trade; | Volte sempre &#x1f600;</p>
+</body>
+</html>

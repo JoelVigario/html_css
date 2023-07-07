@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAC</title>
+    <style>
+        body {
+            font-family: 'Consolas', 'Lucida sans', sans-serif;
+        }
+        
+        h1, p, ol {
+            margin: 30px;
+        }
+        ol {
+            margin-left: 60px;
+        }
+        li {
+            margin-bottom: 15px;
+        }
+        p {
+            text-align: justify;
+            text-indent: 30pt;
+            vertical-align: .3cm;
+        }
+    </style>
+</head>
+<body>
+    <h1>Endereço <span title="Media Access Control">MAC</span></h1>
+    <hr>
+
+    <p>O endereço <span title="Media Access Control">MAC</span> (Media Access Control) é um identificador exclusivo atribuído
+        a cada dispositivo de rede. É um identificador físico gravado na placa 
+        de rede ou no adaptador de rede de um dispositivo. O endereço MAC
+        é utilizado principalmente em redes locais (LANs) para garantir que os
+        pacotes de dados sejam corretamente encaminhados para o 
+        destino correto.</p>
+    <p>O endereço MAC é composto por uma sequência de números e letras, 
+        geralmente apresentada no formato hexadecimal. Ele consiste em 48 bits 
+        (ou 6 bytes) e é dividido em dois campos principais:</p>
+    
+    <ol type="1">
+        <li><strong>Identificador de Organização (24 bits):</strong> Os primeiros 24 bits do 
+            endereço MAC são conhecidos como OUI (Organizationally Unique 
+            Identifier). Eles são atribuídos pela IEEE (Institute of Electrical
+                and Electronics Engineers) e identificam o fabricante ou 
+                organização responsável pelo dispositivo de rede.</li>
+        <li><strong>Identificador de Dispositivo (24 bits):</strong> Os últimos 24 bits do 
+            endereço MAC são atribuídos pelo fabricante do dispositivo de 
+            rede e fornecem um identificador único para o dispositivo
+                específico.</li>
+    </ol>
+    <p>O endereço MAC é usado no nível de acesso ao meio físico da camada de enlace de dados em um modelo de referência de redes, como o modelo OSI (Open Systems Interconnection). Ele é utilizado por protocolos de comunicação, como Ethernet e Wi-Fi, para identificar de forma exclusiva cada dispositivo em uma rede.</p>  
+    <p>Quando os dispositivos de rede enviam dados uns para os outros, eles incluem o endereço MAC de destino nos pacotes de dados. Os switches e roteadores de rede usam o endereço MAC para encaminhar os pacotes para o destino correto dentro de uma rede local. Isso permite que os pacotes de dados sejam entregues apenas ao dispositivo que possui o endereço MAC correspondente.</p>
+    <p>É importante observar que o endereço MAC é um identificador único para cada dispositivo de rede, mas não é necessariamente um identificador fixo. Alguns dispositivos de rede permitem que o endereço MAC seja alterado ou "clonado" por motivos de segurança ou outras necessidades específicas.</p>
+
+    <hr>
+    <label for="">&copy; Joel Vigário | Rigorosidade &trade; | Volte sempre &#x1f604;</label>
+</body>
+</html>

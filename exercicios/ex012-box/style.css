@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+body {
+    margin: 0px;
+    font: normal 1em 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: peachpuff;
+}
+
+h1#ex1 {
+    width: 300px;
+    height: 50px;
+    background-color: lightgray;
+    border: 10px solid crimson;
+    padding: 20px;
+    outline: 30px solid dodgerblue;
+    margin: 50px auto;
+}
+
+#caixa {
+    background-color: snow;
+    width: 400px;
+    margin: auto;
+    padding: 1px 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0, .4);
+    border-radius: 10px 30px;
+}

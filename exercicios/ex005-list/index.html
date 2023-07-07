@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 0px 30px;
+        }
+        .list {
+            font-family: serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Listas</h1>
+    <hr>
+    <p>Lorem <em>ipsum</em> dolor sit amet consectetur adipisicing <em><strong><abbr title="Ordered List">&lt;ol&gt;</abbr></strong></em> elit. Veniam ex nobis, aliquid, quae ut <ins>necessitatibus</ins> suscipit error eius <mark>sint doloribus</mark> in provident dolorem commodi <strong><abbr title="List Item">&lt;li&gt;</abbr></strong> nesciunt <q>voluptatibus dolorum tempore</q>. Velit, quod.</p>
+
+    <h2>Lista ordenada</h2>
+    <ol type="I" start="7"> <!-- type - 1, A, a, I, i --> 
+        <li>Item</li>
+        <li>Item
+        <li>Item
+    </ol>
+    <h2>Lista não ordenada</h2>
+    <ul type="circle"> <!-- type - disc, circle, square -->
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+
+    <h2>Misturando Coisas</h2>
+    <ol>
+        <li>Item</li>
+        <li>Item</li>
+        <ol type="a">
+            <li>Sub-item</li>
+            <li>Sub-item</li>
+            <li>Sub-item</li>
+            <li>Sub-item</li>
+        </ol>
+        <li>Item</li>
+        <li>Item</li>
+    </ol>
+    <h3>Exercício</h3>
+    <p>Lista de jogos ao acaso:</p>
+    <ul type="disc" class="list">
+        <li>Nintendo</li>
+        <ol>
+            <li>Mario Bros</li>
+            <ul type="square">
+                <li>Super Mario Bros 3</li>
+                <li>Mario: Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+            <ul type="square">
+                <li>Ninja Gaiden III</li>
+            </ul>
+        </ol>
+        <li>Super Nintendo</li>
+        <ol>
+            <li>Super Mario World</li>
+            <li>Donkey Kong</li>
+            <ul type="square">
+                <li>Donkey Kong Counrty III</li>
+                <li>Diddy's Kong Quest</li>
+            </ul>
+        </ol>
+        <li>Playstation 1</li>
+        <ol>
+            <li>Final Fantasy</li>
+            <ul type="square">
+                <li>Final Fantasy VII</li>
+                <li>Final Fantasy IX</li>
+            </ul>
+            <li>Castlevania</li>
+            <ul type="square">
+                <li>Simphony of the Night</li>
+            </ul>
+        </ol>
+    </ul>
+
+    <h2>Lista de definições</h2>
+    <ol>
+        <li><abbr title="Definition list">dl</abbr></li>
+        <li><abbr title="definition term">dt</abbr></li>
+        <li><abbr title="definition description">dd</abbr></li>
+    </ol>
+    <br>
+    <dl>
+        <dt><abbr title="Hyper Text Markup Language">HTML</abbr></dt>
+        <dd>Linguagem de marcação utilizada para o conteúdo de sites.</dd>
+
+        <dt><abbr title="Cascading Style Sheet">CSS</abbr></dt>
+        <dd>Linguagem de marcação para a especificação do estilo em sites.</dd>
+
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para criar interatividades em sites.</dd>
+    </dl>
+    <hr>
+    <p>&copy; Joel Vigário | Rigorosidade &trade; | Volte sempre &#x1f600;</p>
+</body>
+</html>

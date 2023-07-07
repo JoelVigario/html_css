@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+body {
+    font: normal 1em Arial, Helvetica, sans-serif;
+    padding: 0 16px;
+}
+
+h1 {
+    font-size: 2em;
+    color: darkgreen;
+}
+
+h2 {
+    color: green;
+}
+
+#titulo-principal {
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+}
+
+.topico {
+    text-align: right;
+}
+
+.texto {
+    text-align: justify;
+}
+
+.texto::first-letter {
+    font-size: 3em;
+    color: darkgreen;
+}
+
+p {
+    text-indent: 30px;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: red;
+}
+
+a:visited {
+    color: darkred;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.especial:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.especial::before {
+    content: "»";
+    font-weight: lighter;
+}
+
+.especial::after {
+    content: "«";
+    font-weight: lighter;
+}

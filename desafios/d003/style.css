@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+:root {
+    --cor0: coral;
+    --cor1: navajowhite;
+    --cor2: moccasin;
+    --cor3: aquamarine;
+    --cor4: darkcyan;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main {
+    padding: 10px;
+}
+
+header {
+    background-color: navajowhite;
+    padding-top: 10px;
+}
+
+header h1 {
+    margin: 10px;
+    padding: 10px;
+    width: 210px;
+    background-color: coral;
+}
+
+header ul {
+    right: 0px;
+    display: inline-block;
+}
+
+header li {
+    display: inline-block;
+    background-color: coral;
+    padding: 5px;
+}
+
+/* main */
+
+#seg {
+    max-width: 800px;
+}
+
+#seg article.arc-verd {
+    width: 98%;
+}
+
+.tamh {max-width: 82%;}
+article.arc-verd {
+    min-height: 250px;
+    padding: 5px;
+    box-shadow: 2px 2px 4px rgba(0,0,0, .3);
+}
+
+article.arc-verd .figura {
+    background-color: aquamarine;
+    height: 100px;
+} 
+
+article.arc-verd .texto {
+    text-align: justify;
+} 
+
+.asd-pq {
+    width: 15%;
+    padding: 5px;
+    min-height: 250px;
+    box-shadow: 2px 2px 4px rgba(0,0,0, .3);
+}
+
+.asd-pq .figura {
+    background-color: moccasin;
+    height: 100px;
+} 
+
+.asd-pq .texto {
+    text-align: justify;
+} 
+
+.baixo {
+    width: 100%;
+    padding: 5px;
+    position: relative;
+    box-shadow: 2px 2px 4px rgba(0,0,0, .3);
+}
+
+.baixo .figura {
+    background-color: coral;
+    height: 100px;
+} 
+
+.baixo .texto {
+    text-align: justify;
+} 
+
+#seg .caixa {
+    width: 48%;
+}
+
+.ult .caixa {
+    max-width: 100%;
+}
+
+.ult {
+    max-width: 35%;
+}
+
+.caixa {
+    min-height: 350px;
+    border: 8px solid white;
+    box-shadow: 2px 2px 4px rgba(0,0,0, .3);
+}
+
+#amarela {
+    background-color: navajowhite;
+}
+
+#laranja {
+    background-color: coral;
+}
+
+#verde {
+    background-color: aquamarine;
+}
+
+.es {
+    float: left;
+}
+
+.dr {
+    float: right;
+}
+
+.cl {
+    clear: both;
+}
+footer {
+    background-color: darkcyan;
+    height: 100px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Este um exercicio feito para exemplificar o uso de media dinâmica">
+    <meta name="keywords" content="Veja exemploas de media dinâmica">
+    <title>Media dinâmica</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 0 30px;
+        }
+        img {
+            display: block;
+            margin: auto;
+            margin-block-start: 0px;
+            padding-block-start: 0px;
+        }
+        .video {
+            position: relative;
+            max-width: 600px;
+            height: 0px;
+            margin: auto;
+            padding-bottom: 59%;
+        }
+        video {
+            position: absolute;
+            left: 5%;
+            top: 5%;
+            width: 90%;
+            height: 90%;
+        }
+    </style>
+</head>
+<body>
+    <noscript>O JS está desativado!</noscript>
+    <h1>Media dinâmica</h1>
+    <hr>
+    <p><ins>Fotos</ins>, <strong>áudios</strong> e <em>vídeos</em> são essenciais para a construção dos sites hoje em dia.</p>
+    <h2>Imagens</h2>
+    <picture>
+        <source media="(max-width: 520px)" srcset="img/image-pp.png" type="image/png">
+        <source media="(max-width: 770px)" srcset="img/image-p.png" type="image/png">
+        <source media="(max-width: 1140px)" srcset="img/image-m.png" type="image/png">
+        <img src="img/image.png" alt="estatistica">
+    </picture>
+
+    <h2>Audio</h2>
+    <p>Música de GABRIELA_ROCHA</p>
+    <audio preload="metadata" controls loop>
+        <source src="audio/GABRIELA_ROCHA.mp3" type="audio/mpeg">
+        <source src="audio/GABRIELA_ROCHA.ogg" type="audio/ogg">
+        <source src="audio/GABRIELA_ROCHA.wav" type="audio/wav">
+        <p>seu navegador não suporta audio <a href="audio/GABRIELA_ROCHA.mp3" download="audio/GABRIELA_ROCHA.mp3" type="audio/mpeg">baixe a música</a></p>
+    </audio>
+
+    <h2>Videos</h2>
+    <p>Veja o clip da música Me Leva Pra Casa  Gabriel Guedes &#x1f604;</p>
+    <div class="video">
+        <video preload="metadata" poster="video/poster.png" controls>
+            <source src="video/Me Leva Pra Casa  Gabriel Guedes.webm" type="video/webm">
+            <source src="video/Me Leva Pra Casa  Gabriel Guedes.mp4" type="video/mp4">
+            <source src="video/Me Leva Pra Casa  Gabriel Guedes.ogv" type="video/ogg">
+            <p>Infelizmente seu navegador não suporta videos</p>
+        </video>
+    </div>
+
+    <p>baixe o  Handbrake, para compactar seus videos em vários formatos em <a href="https://handbrake.fr/downloads.php" target="_blank" rel="external" hreflang="fr">https://handbrake.fr/downloads.php</a></p>
+</body>
+</html>

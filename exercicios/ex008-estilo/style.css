@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightcyan;
+    color: blue;
+    padding: 0px 25px;
+}
+
+h1 {
+    color: green;
+}
+
+p {
+    line-height: 2em;
+    text-indent: 30px;
+    text-align: justify;
+}
+
+a {
+    color: brown;
+    text-decoration: none;
+}
