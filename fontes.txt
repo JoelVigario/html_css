@@ -1,0 +1,13 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+</style>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&display=swap');
+</style>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=Ubuntu+Mono&display=swap');
+</style>
+
+background-image: linear-gradient(77.83deg, rgb(0, 48, 69) 0.61%, rgb(60, 18, 63) 105.45%);
