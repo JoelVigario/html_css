@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+/* conteners */
+
+* {
+    margin: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 40px 0px;
+    text-align: center;
+}
+
+article {
+    padding: 30px 20px;
+    line-height: 2em;
+    font-size: 2vw;
+}
+
+footer {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Conteúdos */
+
+header h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7vw;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+main p {
+    font-size: 1.6em;
+}
+
+.esp {
+    background-size: cover;
+    color: white;
+    box-shadow: inset rgba(0, 0, 0, .4) 0px 4px 6px 0px;
+}
+
+#flor {
+    background: yellow url('imagens/background001.jpg') right center no-repeat fixed;
+    background-size: cover;
+}
+
+#carta {
+    background: #ddd url('imagens/background002.jpg') right bottom no-repeat fixed;
+}
+
+.box-trans {
+    background-color: black;
+    display: inline-block;
+    opacity: .7;
+    fill-opacity: 1;
+}
