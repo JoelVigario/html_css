@@ -3,24 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tabelas</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+            height: 400vh;
         }
         table {
+            position: relative;
             width: 450px;
             border-collapse: collapse;
         }
         thead, tfoot {
-            background-color: black;
+            background-color: #0d3f0d;
             color: white;
+        }
+        thead {
+            position: sticky;
+            top: 0;
         }
         caption {
             font-size: 1.5em;
             font-weight: bold;
-            background-color: lightgray;
+            background-color: #73c173;
             padding: 7px;
+        }
+        tbody > tr:nth-child(odd) {
+            color: #0d3f0d;
+        }
+        tbody > tr:nth-child(even) {
+            background-color: #73c173;
         }
         td, th {
             border: 1px solid black;
@@ -63,11 +76,79 @@
                 <td>Rio de Janeiro</td>
                 <td class="num">17 264 943</td>
             </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 987 280</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 450 037</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 400 278</td>
+            </tr>
+            <tr>
+                <td>Pemambuco</td>
+                <td class="num">9 489 018</td>
+            </tr>
+            <tr>
+                <td>Ceara</td>
+                <td class="num">9 478 190</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 408 278</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 208 068</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7 103 573</td>
+            </tr>
+            <tr>
+                <td>Goiais</td>
+                <td class="num">4 005 198</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4 400 272</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4 190 283</td>
+            </tr>
+            <tr>
+                <td>Paraiba</td>
+                <td class="num">4 108 000</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3 950 189</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3 850 209</td>
+            </tr>
+            <tr>
+                <td>Alaguais</td>
+                <td class="num">3 508 389</td>
+            </tr>
+            <tr>
+                <td>Piaui</td>
+                <td class="num">3 490 578</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3 003 758</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
                 <th scope="row">Total de Habitantes</th>
-                <td class="num">0000</td>
+                <td class="num">210 389 190</td>
             </tr>
         </tfoot>
     </table>
