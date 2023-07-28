@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td, th {
+            padding: 8px;
+            border: 1px solid black;
+        }
+
+        #cGroup {
+            background-color: aqua;
+            color: blue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabelas</h1>
+    <table>
+        <colgroup>
+            <col id="cNome">
+            <col id="cGroup" span="2">
+            <col id="cProf">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>João Gaspar</td>
+                <td>M</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Vania Francisco</td>
+                <td>F</td>
+                <td>29</td>
+                <td>Professora</td>
+            </tr>
+            <tr>
+                <td>Ernesto Kapingano</td>
+                <td>M</td>
+                <td>23</td>
+                <td>Mecânico</td>
+            </tr>
+            <tr>
+                <td>Joana de Sousa</td>
+                <td>F</td>
+                <td>39</td>
+                <td>Eletricista</td>
+            </tr>
+            <tr>
+                <td>Fernanda Maciala</td>
+                <td>F</td>
+                <td>32</td>
+                <td>Secretária</td>
+            </tr>
+            <tr>
+                <td>Paulo Agostinho</td>
+                <td>M</td>
+                <td>28</td>
+                <td>Empresário</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
