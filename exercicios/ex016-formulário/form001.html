@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiro Formulário</h1>
+
+    <!-- métodos de envio
+         * get (padrão) - os dados aparecem na url;
+         * post - não aparece na url, mas dá pra ver no devTools, nectork, payload;
+         * 
+         -->
+
+    <form action="cadastro.php"  autocomplete="off" method="post">
+
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
+
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+
+        <p><input type="submit" value="Enviar"></p>
+
+    </form>
+</body>
+</html>
