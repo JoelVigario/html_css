@@ -52,6 +52,51 @@
                 <input type="time" name="hora" id="hora">
             </p>
         </fieldset>
+        <fieldset>
+            <legend>Listas</legend>
+            <p>
+                <label for="classe">Nível académico: </label>
+                <select name="classe" id="classe">
+                    <option value="">Escolha</option>
+                    <optgroup label="Iº Cíclo">
+                        <option value="1">1ª Classe</option>
+                        <option value="2">2ª Classe</option>
+                        <option value="3">3ª Classe</option>
+                        <option value="4">4ª Classe</option>
+                        <option value="5">5ª Classe</option>
+                        <option value="6">6ª Classe</option>
+                    </optgroup>
+                    <optgroup label="IIº Cíclo">
+                        <option value="7">7ª Classe</option>
+                        <option value="8">8ª Classe</option>
+                        <option value="9">9ª Classe</option>
+                    </optgroup>
+                    <optgroup label="Ensino Médio">
+                        <option value="10">10ª Classe</option>
+                        <option value="11">11ª Classe</option>
+                        <option value="12">12ª Classe</option>
+                        <option value="13">13ª Classe</option>
+                    </optgroup>
+                    <optgroup label="Ensino Superior">
+                        <option value="1ano">1º Ano</option>
+                        <option value="2ano">2º Ano</option>
+                        <option value="3ano">3º Ano</option>
+                        <option value="4ano">4º Ano</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="prof">Profissão: </label>
+                <input type="text" name="prof" id="prof" list="lstProf">
+                <datalist id="lstProf">
+                    <option value="Empresário/a">emp</option>
+                    <option value="Advogado/a">adv</option>
+                    <option value="Enfermeiro/a">enf</option>
+                </datalist>
+            </p>
+            <p><label for="text">Descrição:</label></p>
+            <textarea name="text" id="text" cols="50" rows="10"></textarea>
+        </fieldset>
         <p>
             <input type="submit" value="Enviar" onclick="autent()">
             <input type="reset" value="Limpar">
