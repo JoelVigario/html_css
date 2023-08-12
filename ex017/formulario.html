@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="nome">Nome completo: </label>
+            <input type="text" name="nome" id="nome" required size="40" maxlength="40" autocomplete="username" placeholder="Digite o seu nome">
+        </p>
+        <p>
+            <label for="data_nasc">Data de Nascimento: </label>
+            <input type="date" name="data_nasc" id="data_nasc" value="2000-01-01">
+        </p>
+        <p>
+            <label for="foto">Foto de perfil: </label>
+            <input type="file" name="foto" id="foto">
+        </p>
+        <fieldset>
+            <legend>Sexo</legend>
+            <p>
+                <input type="radio" name="sexo" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="sexo" id="fem">
+                <label for="fem">Feminíno</label>
+            </p>
+        </fieldset>
+        <p>
+            <label for="senha">Palavra-passe: </label>
+            <input type="password" name="senha" id="senha" minlength="8" required size="9" oninput="verificar()"><span id="ver_senha"></span>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+
+    <script>
+        function verificar() {
+            if (senha.value.length < 8) {
+                senha.style.outlineColor = 'red'
+                ver_senha.innerText = ' A senha deve ter 8 ou mais digitos'
+                ver_senha.style.color = 'red'
+            } else {
+                senha.style.outlineColor = '#00ff00'
+                ver_senha.innerText = ''
+            }
+        }
+    </script>
+</body>
+</html>
