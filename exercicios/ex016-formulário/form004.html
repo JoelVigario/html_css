@@ -13,11 +13,29 @@
                 <label for="iemail">Email</label>
                 <input type="email" name="email" id="iemail" autocomplete="email">
             </p>
+            
             <p>
                 <label for="itel">Telefone:</label>
-                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="![0-9]{4}--[0-9]{4}$">
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="[0-9]{4}--[0-9]{4}">
             </p>
-            <!--regex expreções regulares-->
+           
+            <!--regex expreções regulares
+                /abc/ - abc
+                /ab*c/ - abhjc
+                /ab\*c/ - ab*c
+                [a-z] - (de a até z) x
+                [a-z]{4} - (4 digitos de a até z) abvs
+                [xyz] - (qualquer um dos valores) x
+                ^a - (maiusculas para minuscula vv) A
+                \d - (digito) 4
+                
+            -->
+
+
+            <p>
+                <label for="t">Teste:</label>
+                <input type="text" name="t" id="t" pattern="\d">
+            </p>
             <p>
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Limpar">
