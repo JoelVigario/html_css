@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+* {
+    margin: 0px;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header.cabeca {
+    background-color: #1d1a21;
+    display: flex; /* um ao lado do outro*/
+    justify-content: space-between; /* pôe espaço entre eles */
+    flex-wrap: wrap; /*quando a tela fica pequena um deles vai para baixo*/
+    align-items: center; /* alinhamento vertical */
+    padding: 28px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu > li {
+    margin-left: 10px;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+}
+
+/* section FlexBox */
+
+h1 {
+    display: block;
+    margin: 70px 0 70px 0;
+    text-align: center;
+    font-size: 2.6em;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flex figure {
+    flex: 1 1 200px; /* 1 - espandir 1 - srink pode ficar menor 200px - base, tamanho minimo*/
+    margin: 10px;
+}
